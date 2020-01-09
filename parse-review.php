@@ -1,6 +1,6 @@
 <?php
 wp_enqueue_style( 'review-style', plugins_url( '/views/css/style.css', __FILE__ ), [], '' );
-wp_enqueue_script( 'review-script', plugins_url( '/views/js/kiwi-cf-faqjs', __FILE__ ), ['jquery'], '', TRUE );
+wp_enqueue_script( 'review-script', plugins_url( '/views/js/script.js', __FILE__ ), ['jquery'], '', TRUE );
 require_once 'google-reviews-api.php';
 
 $google_reviews = new GoogleReviews();
