@@ -95,6 +95,9 @@
 }
 
 #wrap-sh-slider .control_prev, #wrap-sh-slider .control_next {
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
     position: absolute;
     top: calc(50% - 18px);
     z-index: 999;
