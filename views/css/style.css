@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+#wrap-sh-slider {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100rem !important;
+    box-sizing: unset;
+}
+
+.sh-slider {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.sh-slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sh-slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 370px;
+    text-align: center;
+    background: rgb(235, 236, 236);
+    box-shadow: rgba(45, 16, 204, 0.35) 0px 10px 20px;
+    border-radius: 4px;
+    overflow-y: auto;
+}
+
+.sh-slider .time-desc {
+    margin-bottom: 10px;
+}
+
+.sh-slider .review-block .avatar img {
+    height: 100px;
+    padding: 1rem;
+    display: unset;
+}
+
+.sh-slider .first-quote{
+    color: #2d10cca6;
+}
+
+.sh-slider .last-quote{
+    transform: rotate(180deg);
+    color: #2d10cca6;
+}
+
+.sh-slider .name {
+    font-size: 17px;
+}
+
+.sh-slider p {
+    color: #464646;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+.sh-slider .review-text {
+    padding: 1rem;
+}
+
+.sh-slider{
+    font-family: unset;
+}
+
+.dashicons, .dashicons-before:before {
+    font-family: dashicons;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in;
+}
+
+#wrap-sh-slider .control_prev, #wrap-sh-slider .control_next {
+    position: absolute;
+    top: calc(50% - 18px);
+    z-index: 999;
+    display: block;
+    padding: 4px 8px;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#wrap-sh-slider .control_prev:hover, #wrap-sh-slider .control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+#wrap-sh-slider .control_prev {
+    border-radius: 2px 0 0 2px;
+}
+
+#wrap-sh-slider .control_next {
+    right: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+
+
+.star-ratings-css {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 25px;
+    height: 25px;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    text-shadow: 0px 1px 0 #a2a2a2;
+
+}
+
+.star-ratings-css span {
+    word-wrap: normal !important;
+    word-break: normal !important;
+}
+
+.star-ratings-css .star-ratings-css-top {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.star-ratings-css .star-ratings-css-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
