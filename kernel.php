@@ -16,6 +16,10 @@ if ( ! is_admin()) {
     add_shortcode('kiwi-google-review',  'kiwi_google_reviews');
 }
 
+function kiwi_google_reviews_generate_shortcode($id){
+    add_shortcode('kiwi-google-review',  'kiwi_google_reviews', $id);
+}
+
 function kiwi_google_places() {
     require_once 'parse-places.php';
 }
@@ -31,4 +35,3 @@ function kiwi_google_reviews($atts, $content = null) {
     require_once 'parse-review.php';
     return true;
 }
-
