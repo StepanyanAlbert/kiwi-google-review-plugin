@@ -10,6 +10,7 @@
 }
 
 .sh-slider {
+    font-family: 'Open Sans', sans-serif;
     position: relative;
     overflow: hidden;
     margin: auto;
@@ -27,14 +28,18 @@
     position: relative;
     display: block;
     float: left;
-    margin: 0;
     padding: 0;
     height: 370px;
     text-align: center;
-    background: rgb(235, 236, 236);
+    background: white;
     box-shadow: rgba(45, 16, 204, 0.35) 0px 10px 20px;
     border-radius: 4px;
-    overflow-y: auto;
+    overflow-y: hidden;
+    margin-top: 0.8rem;
+}
+
+.sh-slider ul li:hover{
+    overflow-y:auto;
 }
 
 .sh-slider .time-desc {
@@ -43,38 +48,49 @@
 
 .sh-slider .review-block .avatar img {
     height: 100px;
-    padding: 1rem;
+    display: unset;
+    margin-top: 1rem;
+}
+
+.sh-slider .review-block .review-text {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 32px;
+    margin-bottom: 0.7rem;
+    padding: 0.8em 0.7em;
+}
+
+.sh-slider .review-block .review-text p {
+    font-size: 9pt;
+}
+
+.sh-slider .review-block .avatar {
     display: unset;
 }
 
-.sh-slider .first-quote{
+.sh-slider .first-quote {
     color: #2d10cca6;
 }
 
-.sh-slider .last-quote{
+.sh-slider .last-quote {
     transform: rotate(180deg);
     color: #2d10cca6;
 }
 
 .sh-slider .name {
-    font-size: 17px;
+    font-size: 13pt;
+    line-height:1rem;
 }
 
 .sh-slider p {
     color: #464646;
     margin-top: -5px;
-    font-size: 15px;
+    font-size: 9pt;
 }
 
-.sh-slider .review-text {
-    padding: 1rem;
-}
 
-.sh-slider{
-    font-family: unset;
-}
-
-.dashicons, .dashicons-before:before {
+.dashicons,
+.dashicons-before:before {
     font-family: dashicons;
     display: inline-block;
     line-height: 1;
@@ -88,44 +104,53 @@
     -moz-osx-font-smoothing: grayscale;
     width: 20px;
     height: 20px;
-    font-size: 20px;
+    font-size: 14px;
     vertical-align: top;
     text-align: center;
     transition: color .1s ease-in;
 }
 
-#wrap-sh-slider .control_prev, #wrap-sh-slider .control_next {
+#wrap-sh-slider .control_prev,
+#wrap-sh-slider .control_next {
     -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
     position: absolute;
     top: calc(50% - 18px);
     z-index: 999;
     display: block;
-    padding: 4px 8px;
+    padding: 12px 8px;
     width: auto;
     height: auto;
-    background: #2a2a2a;
-    color: #fff;
+    background:white;
+    color:#6f5dd7;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
-    opacity: 0.8;
     cursor: pointer;
+    box-shadow: 0rem 0.2rem 0.5rem #c1c1c1;
 }
 
-#wrap-sh-slider .control_prev:hover, #wrap-sh-slider .control_next:hover {
+#wrap-sh-slider .control_prev:hover,
+#wrap-sh-slider .control_next:hover {
     opacity: 1;
     -webkit-transition: all 0.2s ease;
 }
 
+#wrap-sh-slider .control_prev::before,
+#wrap-sh-slider .control_next::before {
+    vertical-align: middle;
+    font-size:18pt;
+}
+
+
 #wrap-sh-slider .control_prev {
-    border-radius: 2px 0 0 2px;
+    border-radius:  50% 0 0 50%;
 }
 
 #wrap-sh-slider .control_next {
     right: 0;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 50% 50% 0;
 }
 
 
@@ -133,13 +158,13 @@
 .star-ratings-css {
     unicode-bidi: bidi-override;
     color: #c5c5c5;
-    font-size: 25px;
+    font-size: 22pt;
     height: 25px;
-    width: 100px;
+    width: 120px;
     margin: 0 auto;
     position: relative;
     padding: 0;
-    text-shadow: 0px 1px 0 #a2a2a2;
+    text-shadow: 0px 1px 0 #dfdfdf;
 
 }
 
@@ -149,7 +174,7 @@
 }
 
 .star-ratings-css .star-ratings-css-top {
-    color: #e7711b;
+    color: #ffbf00;;
     padding: 0;
     position: absolute;
     z-index: 1;
@@ -164,4 +189,47 @@
     padding: 0;
     display: block;
     z-index: 0;
+}
+
+.kiwi-slider{
+    min-height: 450px;
+    /* max-width: 730px; */
+}
+
+.kiwi-slider .glide_slide {
+    /* min-width: 227px; */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    transition:0.2s;
+    transition-timing-function: ease-out;
+}
+
+.kiwi-slider .glide__slides{
+    white-space: normal;
+    min-height: 470px;
+}
+
+.kiwi-slider .glide__arrow svg{
+    width:20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.kiwi-slider .glide__arrow--left{
+    left:0rem;
+}
+
+.kiwi-slider .glide__arrow--right{
+    right:0rem;
+}
+
+.kiwi-slider .glide__slide--active{
+    transition:0.2s;
+    transition-timing-function: ease-in;
+    height: 390px;
+    margin-top:40px;
 }
