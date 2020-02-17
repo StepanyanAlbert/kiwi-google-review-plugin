@@ -10,13 +10,13 @@ class GoogleReviews extends Curl {
      */
     public function get_reviews( $place_id ) {
         $link = 'https://maps.googleapis.com/maps/api/place/details/json';
-
-        return json_decode(
+        $info = json_decode(
             $this->fetch_get( $link, [
-                'key' => self::KEY,
+                'key' => get_option('kiwi_google_reviews_api_key'),
                 'place_id' => $place_id
             ] )
         );
+        return $info;
     }
 
 }

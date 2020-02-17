@@ -1,7 +1,7 @@
 <?php
 
 class Curl {
-    const KEY = 'AIzaSyBhu9Lda62uKEuOnNxBOsAgFSjabDiZUFY';
+    const KEY = '';
 
     /**
      *
