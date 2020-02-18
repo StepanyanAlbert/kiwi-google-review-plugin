@@ -185,12 +185,12 @@
   z-index: 0;
 }
 
-.kiwi-slider {
+.wp-slider {
   min-height: 450px;
   /* max-width: 730px; */
 }
 
-.kiwi-slider .glide_slide {
+.wp-slider .glide_slide {
   /* min-width: 227px; */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -202,26 +202,26 @@
   transition-timing-function: ease-out;
 }
 
-.kiwi-slider .glide__slides {
+.wp-slider .glide__slides {
   white-space: normal;
   min-height: 470px;
 }
 
-.kiwi-slider .glide__arrow svg {
+.wp-slider .glide__arrow svg {
   width: 20px;
   height: 20px;
   vertical-align: middle;
 }
 
-.kiwi-slider .glide__arrow--left {
+.wp-slider .glide__arrow--left {
   left: 0rem;
 }
 
-.kiwi-slider .glide__arrow--right {
+.wp-slider .glide__arrow--right {
   right: 0rem;
 }
 
-.kiwi-slider .glide__slide--active {
+.wp-slider .glide__slide--active {
   transition: 0.2s;
   transition-timing-function: ease-in;
   height: 390px;
@@ -235,12 +235,12 @@
   margin: 10px auto;
 }
 
-.kiwi-map-container {
+.wp-map-container {
   background-color: white;
   padding: 1rem;
 }
 
-.kiwi-map-search {
+.wp-map-search {
   display: block;
   margin: 0 auto;
   border-radius: 30px !important;
@@ -248,7 +248,7 @@
   border: 1px solid #0086ff !important;
 }
 
-.kiwi-confirm-btn:disabled {
+.wp-confirm-btn:disabled {
   transition: 0.4s;
   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   cursor: not-allowed;
@@ -256,7 +256,7 @@
   background: #8b8b8b;
 }
 
-.kiwi-confirm-btn {
+.wp-confirm-btn {
   margin: 2rem auto;
   display: block;
   transition: 0.4s;
@@ -271,33 +271,33 @@
   cursor: pointer;
 }
 
-.kiwi-google-reviews-spinner {
+.wp-google-reviews-spinner {
   margin: 9.5rem auto 0;
   width: 70px;
   text-align: center;
 }
 
-.kiwi-google-reviews-spinner>div {
+.wp-google-reviews-spinner>div {
   width: 18px;
   height: 18px;
   background-color: #6f5dd7;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: kiwi-google-reviews-sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: kiwi-google-reviews-sk-bouncedelay 1.4s infinite ease-in-out both;
+  -webkit-animation: wp-google-reviews-sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: wp-google-reviews-sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.kiwi-google-reviews-spinner .bounce1 {
+.wp-google-reviews-spinner .bounce1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-.kiwi-google-reviews-spinner .bounce2 {
+.wp-google-reviews-spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
 
-@-webkit-keyframes kiwi-google-reviews-sk-bouncedelay {
+@-webkit-keyframes wp-google-reviews-sk-bouncedelay {
   0%, 80%, 100% {
     -webkit-transform: scale(0)
   }
@@ -307,7 +307,7 @@
   }
 }
 
-@keyframes kiwi-google-reviews-sk-bouncedelay {
+@keyframes wp-google-reviews-sk-bouncedelay {
   0%, 80%, 100% {
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -319,7 +319,7 @@
   }
 }
 
-.kiwi-google-reviews-loader {
+.wp-google-reviews-loader {
   position: absolute;
   z-index: 1;
   background: white;
@@ -327,7 +327,7 @@
   height: 100%;
 }
 
-.kiwi-reviews-btn {
+.wp-reviews-btn {
   transition: 0.3s;
   transition-timing-function: ease-out;
   background: #6f5dd7;
@@ -342,23 +342,23 @@
 
 
 
-.kiwi-reviews-btn:hover {
+.wp-reviews-btn:hover {
   transition: 0.3s;
   transition-timing-function: ease-in;
   background: #8e7aff;
 }
 
-.kiwi-reviews-btn:focus, .kiwi-reviews-btn:active {
+.wp-reviews-btn:focus, .wp-reviews-btn:active {
   transition: 0.3s;
   transition-timing-function: ease-out;
   background: #5142a8;
 }
 
-.kiwi-reviews-btn svg {
+.wp-reviews-btn svg {
   height: 15px;
 }
 
-.kiwi-google-reviews-input {
+.wp-google-reviews-input {
   margin: 0px;
   border-radius: 5px 0px 0px 5px !important;
 }
