@@ -30,7 +30,7 @@
     startAt: 0,
 
     /**
-     * A number of slides visible on the single viewport.
+     * A number of slides visible on the single viekiwiort.
      *
      * @type {Number}
      */
@@ -167,7 +167,7 @@
     direction: 'ltr',
 
     /**
-     * The distance value of the next and previous viewports which
+     * The distance value of the next and previous viekiwiorts which
      * have to peek in the current view. Accepts number and
      * pixels as a string. Left and right peeking can be
      * set up separately with a directions object.

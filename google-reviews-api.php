@@ -12,7 +12,7 @@ class GoogleReviews extends Curl {
         $link = 'https://maps.googleapis.com/maps/api/place/details/json';
         $info = json_decode(
             $this->fetch_get( $link, [
-                'key' => get_option('wp_google_reviews_api_key'),
+                'key' => get_option('kiwi_reviews_api_key'),
                 'place_id' => $place_id
             ] )
         );

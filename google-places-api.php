@@ -13,7 +13,7 @@ class GooglePlaces extends Curl {
 
         $info = json_decode(
             $this->fetch_get( $link, [
-                'key' => get_option('wp_google_reviews_api_key'),
+                'key' => get_option('kiwi_reviews_api_key'),
                 'fields' => 'reviews',
                 'place_id' => $query
             ] )

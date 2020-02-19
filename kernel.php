@@ -1,29 +1,29 @@
 <?php
 add_action('admin_menu', 'admin_menu_add', 20);
-add_action('admin_post_submit-form', 'wp_google_reviews_generate_shortcode'); // If the user is logged in
+add_action('admin_post_submit-form', 'kiwi_reviews_generate_shortcode'); // If the user is logged in
 
 function admin_menu_add()
 {
   add_menu_page(
-    'WP Google Reviews',
-    'WP Google Reviews',
+    'Kiwi Reviews',
+    'Kiwi Reviews',
     'administrator',
-    'google-reviews',
-    'wp_google_places',
+    'kiwi-reviews',
+    'kiwi_places',
     'dashicons-format-quote'
   );
 }
 
 if (! is_admin()) {
-  add_shortcode('wp-google-review', 'wp_google_reviews');
+  add_shortcode('kiwi-review', 'kiwi_reviews');
 }
 
-function wp_google_places()
+function kiwi_places()
 {
   require_once 'parse-places.php';
 }
 
-function wp_google_reviews($atts, $content = null)
+function kiwi_reviews($atts, $content = null)
 {
   extract(shortcode_atts(array( 'id' => '' ), $atts));
   global $place_id;
@@ -35,7 +35,7 @@ function wp_google_reviews($atts, $content = null)
   require 'parse-review.php';
 }
 
-function wp_google_reviews_generate_shortcode($id)
+function kiwi_reviews_generate_shortcode($id)
 {
-  add_shortcode('wp-google-review', 'wp_google_reviews', $id);
+  add_shortcode('kiwi-review', 'kiwi_reviews', $id);
 }
