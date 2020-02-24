@@ -1,4 +1,4 @@
-=== kiwi Google reviews ===
+﻿=== Kiwi Reviews ===
 Contributors: Kiwi Science, Kiwi Plugins
 Tags: google, reviews, kiwi, kiwi science, feedback, slider, fast, responsive, modern
 Requires at least: 4.3
@@ -11,8 +11,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 This is one of the simplest ways to incorporate reviews on your website, so if you like a look of cleanliness and the sliding review formatting, this is definitely a plugin to consider. Provide a quick and accurate visualization to information from people across the globe who have already purchased and used something in which they are interested. In addition, it’s completely free of any charge along the way.
 
 == Installation ==
-1. Upload the entire `kiwi-reviews` folder to the `/kiwi-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress. You will find 'kiwi Google reviews' menu in your WordPress admin panel.
+1. Upload the entire `kiwi-reviews` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress. You will find 'Kiwi reviews' menu in your WordPress admin panel.
 
 * Added a map where user can search the place.
 * Added a field in database to store user's API key.

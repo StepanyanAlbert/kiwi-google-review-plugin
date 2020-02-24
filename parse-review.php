@@ -4,12 +4,11 @@ wp_enqueue_style('dashicons');
 wp_enqueue_style('review-style', plugins_url('/views/css/style.css', __FILE__), [], '');
 wp_enqueue_style('glide-core-style', plugins_url('/views/css/glide.core.css', __FILE__), [], '');
 wp_enqueue_style('glide-theme-style', plugins_url('/views/css/glide.theme.css', __FILE__), [], '');
-require_once 'google-reviews-api.php';
 
-
-$google_reviews = new GoogleReviews();
-$reviews = $google_reviews->get_reviews($place_id);
-$reviews = $reviews->result->reviews;
+$info = wp_remote_get('https://maps.googleapis.com/maps/api/place/details/json?key='. get_option('kiwi_reviews_api_key').'&place_id='.$place_id);
+$body = wp_remote_retrieve_body($info);
+$data = json_decode($body);
+$reviews = $data->result->reviews;
 ?>
 
 <?php
