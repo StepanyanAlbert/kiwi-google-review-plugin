@@ -66,7 +66,7 @@
   if (!isset($_GET['kiwi-reviews-change-key'])):
   if (!empty(get_option('kiwi_reviews_api_key'))):
   if (!empty($_POST['place_id'])) {
-      $query = $_POST['place_id'];
+      $query = sanitize_text_field($_POST['place_id']);
       $info = wp_remote_get('https://maps.googleapis.com/maps/api/place/details/json?key='. get_option('kiwi_reviews_api_key').'&fields=reviews&place_id='.$query);
       add_shortcode('kiwi-review', 'kiwi_reviews', sanitize_text_field($_POST['place_id']));
       do_shortcode('[kiwi-review place-id='.sanitize_text_field($_POST['place_id']).']');
