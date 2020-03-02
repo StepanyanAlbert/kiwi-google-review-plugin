@@ -1,5 +1,5 @@
-﻿=== Kiwi Reviews ===
-Contributors: Kiwi Science, Kiwi Plugins
+﻿﻿=== Kiwi Reviews ===
+Contributors: kiwiplugins
 Tags: google, reviews, kiwi, kiwi science, feedback, slider, fast, responsive, modern
 Requires at least: 4.3
 Tested up to: 5.3.2
@@ -30,3 +30,11 @@ Yes. You can visit the plugin's main page on admin's sidebar, search the places 
  You can have as many as you wish, from different places and multiple sliders on the same page.
 = What sort of support do you offer ? =
 We pride ourselves on offering excellent support! Most of the time you will be talking directly with the plugin developer via the email at info@kiwi-science.com
+
+== Screenshots ==
+
+1. Welcome screen
+2. Find your place using Google maps
+3. The generated shortcode and a preview of your reviews
+4. Reviews displayed on a page
+5. Multiple review blocks support
